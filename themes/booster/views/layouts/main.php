@@ -33,6 +33,7 @@
                     array('label' => 'Home', 'url' => array('/site/index')),
                     User::getMenu(),
                     array('label' => 'Contact', 'url' => array('/site/contact')),
+                    array('label' => 'Guest Book', 'url' => array('/guestBook')),
                 ),
             ),
             array(
@@ -53,6 +54,12 @@
                             array(
                                 array('label' => 'List', 'url' => array('/album/admin')),
                                 array('label' => 'Create new', 'url' => array('/album/create')),
+                            )
+                        ),
+                        array('label' => 'Guest Book', 'url' => '#', 'items' =>
+                            array(
+                                array('label' => 'List', 'url' => array('/guestBook/admin')),
+                                array('label' => 'Create new', 'url' => array('/guestBook/create')),
                             )
                         ),
                         '---',
